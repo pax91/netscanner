@@ -9,7 +9,8 @@ To run script just run ./scanner.sh and follow onscreen instuctions.
 
 ### Requirements
 The script require to be runned on Linux or MACOSX and having NMAP installed on the machine.
-The script was developed on OSX Sonoma 14.3.1 with NMAP v7.92
+NMAP INSTALLERS: https://nmap.org/download.html.
+The script was developed on OSX Sonoma 14.3.1 with NMAP v7.92, should run on other OS versions with no problem, not tested!
 
 ### Description
 The script will create a new REPORT folder in user Desktop where put txt files containing settings and HTML reports of scans.
