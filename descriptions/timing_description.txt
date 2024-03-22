@@ -1,0 +1,12 @@
+These templates allow the user to specify how aggressive they wish to be, 
+ while leaving Nmap to pick the exact timing values. 
+ The templates also make some minor speed adjustments for which fine-grained 
+ control options do not currently exist. For example, -T4 prohibits the 
+ dynamic scan delay from exceeding 10 ms for TCP ports and -T5 caps that 
+ value at 5 ms. Templates can be used in combination with fine-grained 
+ controls, and the granular options will override the general timing templates 
+ for those specific values. I recommend using -T4 when scanning reasonably 
+ modern and reliable networks. Keep that option 
+ (at the beginning of the command line) even when you add fine-grained 
+ controls so that you benefit from those extra minor
+ optimizations that it enables.

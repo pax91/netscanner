@@ -1,0 +1,8 @@
+One of the most common Nmap usage scenarios is to scan an ethernet LAN. 
+ On most LANs, especially those using private address ranges granted 
+ by RFC 1918, 
+ the vast majority of IP addresses are unused at any given time. 
+ When Nmap tries to send a raw IP packet such as an ICMP echo request, 
+ the operating system must determine the destination hardware 
+ (ARP) address corresponding to the target IP so that it can address 
+ the ethernet frame properly. 

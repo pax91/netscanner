@@ -1,0 +1,2 @@
+This option will perform a Fast Scan with option
+ --top-ports 20 setted.

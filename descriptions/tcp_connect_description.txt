@@ -1,0 +1,14 @@
+TCP connect scan is the default TCP scan type when SYN scan is 
+ not an option. This is the case when a user does not have raw 
+ packet privileges. 
+ Instead of writing raw packets as most other scan types do, 
+ Nmap asks the underlying operating system to establish a 
+ connection with the target machine and port by issuing the 
+ connect system call. 
+ This is the same high-level system call that web browsers, 
+ P2P clients, and most other network-enabled applications use 
+ to establish a connection. 
+ It is part of a programming interface known as the Berkeley Sockets API. 
+ Rather than read raw packet responses off the wire, 
+ Nmap uses this API to obtain status information on each 
+ connection attempt.

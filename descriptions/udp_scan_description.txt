@@ -1,0 +1,9 @@
+While most popular services on the Internet run over the TCP protocol, 
+ UDP services are widely deployed. 
+ DNS, SNMP, and DHCP (registered ports 53, 161/162, and 67/68) 
+ are three of the most common. 
+ Because UDP scanning is generally slower and more difficult than TCP, 
+ some security auditors ignore these ports. 
+ This is a mistake, as exploitable UDP services are quite common and 
+ attackers certainly don't ignore the whole protocol. 
+ Fortunately, Nmap can help inventory UDP ports.

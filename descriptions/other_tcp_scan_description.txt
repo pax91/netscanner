@@ -1,0 +1,30 @@
+These three scan types exploit a subtle loophole in the TCP RFC 
+ to differentiate between open and closed ports. 
+ Page 65 of RFC 793 says that “if the [destination] port state 
+ is CLOSED .... an incoming segment not containing a RST causes a RST 
+ to be sent in response.” Then the next page discusses packets 
+ sent to open ports without the SYN, RST, or ACK bits set, stating that: 
+ “you are unlikely to get here, but if you do, drop the segment, and return.”
+ When scanning systems compliant with this RFC text, any packet not 
+ containing SYN, RST, or ACK bits will result in a returned RST if the port 
+ is closed and no response at all if the port is open. 
+ As long as none of those three bits are included, any combination of the
+ other three (FIN, PSH, and URG) are OK. 
+ Nmap exploits this with three scan types:
+
+     Null scan (-sN)
+     Does not set any bits (TCP flag header is 0)
+
+     FIN scan (-sF)
+     Sets just the TCP FIN bit.
+
+     Xmas scan (-sX)
+     Sets the FIN, PSH, and URG flags, lighting the packet up like 
+     a Christmas tree.
+
+ These three scan types are exactly the same in behavior except for the 
+ TCP flags set in probe packets. 
+ If a RST packet is received, the port is considered closed, 
+ while no response means it is open|filtered. 
+ The port is marked filtered if an ICMP unreachable error 
+ (type 3, code 0, 1, 2, 3, 9, 10, or 13) is received.
