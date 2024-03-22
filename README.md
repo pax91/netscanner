@@ -1,6 +1,6 @@
-##   PAX NETWORK SCANNER SCRIPT
+#   PAX NETWORK SCANNER SCRIPT
 ##  © made by PAX - Luca Passoni
-# Network scanner script all based on NMAP scanning functions, say thanks to NMAP developers https://nmap.org
+### Network scanner script all based on NMAP scanning functions, say thanks to NMAP developers https://nmap.org
 
 Download all files and add to all the .sh files +x mode, using chmod +x *.sh.
 To run script just run ./scanner.sh and follow onscreen instuctions.
