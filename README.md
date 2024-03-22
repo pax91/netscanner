@@ -5,6 +5,10 @@
 
 ### Installation 
 Download all files and add to all the .sh files +x mode, using chmod +x *.sh.
+Run below command to download and make executable the script.
+```
+wget -O netscanner.zip https://github.com/pax91/netscanner/archive/refs/heads/main.zip && unzip netscanner.zip && cd netscanner-main && chmod +x *.sh
+```
 To run script just run ./scanner.sh and follow onscreen instuctions.
 
 ### Requirements
