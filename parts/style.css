@@ -1,0 +1,140 @@
+/* 
+    PAX NETWORK SCANNER SCAN REPORTS 
+        Custom CSS Stylesheet
+     © made by PAX - Luca Passoni
+*/
+:root {
+    --fontFamily: Verdana;
+    --fontSize: 15px;  
+    --bgColor: rgb(255, 255, 255);
+    --textColor: rgb(0, 0, 0);
+    --bgHead: rgb(100, 220, 100);
+    --bgMain: rgb(204, 255, 204);
+    --bgSecondary: rgb(239, 255, 247);
+    --linkColor: rgb(0, 100, 0);
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    color: var(--textColor);
+    margin: unset;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding: 0.3em;
+    margin: unset;
+    background-color: var(--bgHead);
+    border-radius: 0.5em;
+}
+
+h2 {
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 0.4em 0px 0.4em 1em;
+    margin: unset;
+    background-color: var(--bgMain);
+    margin: 0.5em 0px;
+    border-radius: 0.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0.5em 0px;
+}
+
+#container {
+    margin: 1em 2em;
+}
+
+ul {  
+    margin: 0.5em 0px;
+}
+
+#menu {
+    width: 75%;
+    list-style-type: none;
+    font-size: 1.3em;
+}
+#menu li {
+    display: inline;
+    list-style-type: none;
+}
+
+p {
+    margin: 0.3em;
+}
+
+a {
+    color: var(--linkColor);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    font-size: 0.9em;
+    background-color: var(--textColor);
+    text-align: center;
+    margin: 0.5em;
+}
+tr {
+    background-color: var(--bgColor);
+}
+table .head {
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: var(--bgHead);
+}
+table .open {
+    background-color: var(--bgMain);
+}
+table .script {
+    font-size: 0.8em;
+    background-color: var(--bgSecondary);
+}
+table td pre {
+    margin: unset;
+    white-space: break-spaces;
+    font-family: var(--fontFamily);
+}
+table td {
+    padding: 0.5em;
+}
+
+#menubox {
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+    width: 10em;
+    text-align: center;
+}
+#menubox a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+#menubox a:hover {
+    text-decoration: underline;
+}
+
+.print_only {
+    display: none;
+}
+  
+.hidden {
+    display: none;
+}
+  
+.unhidden {
+    display: block;
+}
+  

@@ -1,0 +1,16 @@
+In this type of scan, Nmap sends a TCP packet to a port with 
+the SYN flag set. In this scenario two things can occur :
+
+The target responds with an RST packet that signifies that the 
+port is closed.
+Target doesn’t respond at all, probably due to a firewall dropping 
+all incoming packets in which case the port will be considered filtered
+The target responds back with a TCP packet with the SYN/ACK flags set 
+which would signify that the port is open and then Nmap would respond 
+with a TCP packet with the ACK flag set and hence would complete the 
+TCP 3-way handshake.
+
+This is not a very reliable scan technique as it is easy to configure
+a firewall rule to respond back with RST packets or drop all incoming 
+packets. Also this method is extremely slow as it waits for the entire 
+TCP 3 way handshake.

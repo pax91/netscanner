@@ -1,0 +1,13 @@
+This option tells Nmap not to do a port scan after host discovery, 
+ and only print out the available hosts that responded to the host 
+ discovery probes. 
+ This is often known as a “ping scan”, 
+ but you can also request that traceroute and NSE host scripts be run. 
+ This is by default one step more intrusive than the list scan, 
+ and can often be used for the same purposes. 
+ It allows light reconnaissance of a target network without attracting 
+ much attention. 
+ Knowing how many hosts are up is more valuable to attackers 
+ than the list provided by list scan of every single IP and host name.
+ PING Scan will also create the IP LIST files to be used on 
+ other Scan Options.

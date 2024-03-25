@@ -1,0 +1,3 @@
+In TCP Null Scans, the TCP packets sent don’t have any of the flags set. 
+According to RFC, under such a circumstance, the target should respond 
+back with an RST if the port is closed

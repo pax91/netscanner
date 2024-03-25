@@ -1,0 +1,3 @@
+This option will let you set Custom NMAP Scan Flags.
+See NMAP online documentation for more details
+https://nmap.org/book/man-briefoptions.html

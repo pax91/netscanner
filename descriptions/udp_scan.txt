@@ -1,0 +1,18 @@
+UDP scans are much less reliable than the previous two as UDP connections 
+are stateless by nature. This means that there’s no “feedback mechanism” 
+like TCP. UDP works on the principle “Fire and Forget” which means that 
+it sends packets directed to targets at certain ports and hopes that they 
+would make it. 
+This gives more emphasis on speed than quality. However, the lack 
+of a feedback mechanism makes it difficult to identify open ports.
+
+When an UDP packet is sent to a target port, there might be three scenarios:
+
+Usually there is no response received in which case nmap marks the port 
+as open|filtered. If no response is received yet, it sends another UDP 
+packet to double check and if yet again no response is received, 
+it marks the port as open|filtered and moves on
+It might get a UDP response back which is very rare. In such a scenario, 
+the port is marked open
+If the port is closed and it receives an ICMP echo request back 
+which signifies that the port is unreachable.

@@ -1,0 +1,21 @@
+SYN scans, also known as “Half-Open” or “Stealth Scan” are an 
+improvement over the previous method. In the previous method where 
+we were sending back a TCP packet with the ACK flag set after receiving 
+an SYN/ACK packet, now we would be sending an RST packet. This prevents 
+the server from repeatedly trying to make the requests and massively 
+reduces scan times.
+
+This method is an improvement on the previous ones because:
+
+They are faster
+They might be able to bypass some primitive firewalls
+Often, SYN Scans are not logged by applications running on the ports 
+as most applications start logging a connection only after it has been 
+fully established which is not the case with SYN Scans
+However, it is not advisable to run SYN Scans on production environments 
+as it might break certain unstable applications. It is also to be noted 
+that SYN scans also require sudo privileges because it needs to craft 
+raw packets.
+
+Infact, when run with sudo privileges, nmap defaults to SYN Scans, 
+otherwise it defaults to TCP scan.

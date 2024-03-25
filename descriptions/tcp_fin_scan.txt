@@ -1,0 +1,5 @@
+This is very similar to the TCP Null Scan except for the fact 
+that instead of sending a completely empty TCP packet, it sends 
+a packet with the FIN flag set which is used to gracefully close 
+a connection. Accordingly the target must respond back with an 
+RST for closed ports as per RFC.

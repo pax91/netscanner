@@ -1,0 +1,11 @@
+This option enables additional advanced and aggressive options. 
+I haven´t decided exactly which it stands for yet. 
+Presently this enables OS detection (-O), version scanning (-sV), 
+script scanning (-sC) and traceroute (--traceroute).  
+More features may be added in the future. The point is to enable 
+a comprehensive set of scan options without people having to remember
+a large set of flags.
+However, because script scanning with the default set is considered 
+intrusive, you should not use -A against target networks without 
+permission. This option only enables features, and not timing options
+(such as -T4) or verbosity options (-v) that you might want as well.

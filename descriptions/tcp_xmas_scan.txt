@@ -1,0 +1,4 @@
+TCP Xmas Scans is also very similar to the last two scan techniques 
+except for the fact that they use TCP packets with the PSH, URG and 
+FIN flags set. Like the last two scan types, this too expects RST 
+packets for closed ports under RFC.

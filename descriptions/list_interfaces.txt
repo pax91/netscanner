@@ -1,0 +1,3 @@
+Prints the interface list and system routes as detected by Nmap. 
+This is useful for debugging routing problems or device 
+mischaracterization (such as Nmap treating a PPP connection as ethernet).
